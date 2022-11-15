@@ -11,17 +11,18 @@ export const Container = styled.div`
     gap: 5vw;
     h4 {
       font-size: 20px;
-      color: #63656d;
+      color: var(--primary);
     }
     .icon {
       font-size: 24px;
       cursor: pointer;
+      color: var(--primary);
     }
   }
   .projects_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 32px;
     margin: 5vh 20vw;
 
     .card {
@@ -30,14 +31,15 @@ export const Container = styled.div`
       gap: 8px;
 
       a {
-        color: #63656d;
+        color: var(--primary);
         text-decoration: none;
         display: flex;
         flex-direction: column;
         gap: 8px;
         img {
           width: 100%;
-          box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+          box-shadow: var(--box_shadow);
+          border-radius: var(--border_radius);
         }
       }
     }

@@ -7,31 +7,42 @@ export const Container = styled.div`
   justify-content: space-between;
   .logo {
     display: flex;
-    h1 {
-      img {
-        width: 20px;
+    a {
+      text-decoration: none;
+      h1 {
+        img {
+          width: 20px;
+        }
+      }
+      .home_h1 {
+        color: var(--secondary);
+      }
+      .h1 {
+        color: var(--primary);
       }
     }
-    .home_h1 {
-      color: #fff;
-    }
-    .h1 {
-      color: #63656d;
-    }
   }
+
   .home_links {
     display: flex;
     align-items: center;
     gap: 32px;
     font-size: 18px;
-    color: #fff;
+
+    a {
+      color: var(--secondary);
+      text-decoration: none;
+    }
   }
   .links {
     display: flex;
     align-items: center;
     gap: 32px;
     font-size: 18px;
-    color: #63656d;
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
   }
   @media screen and (max-width: 760px) {
     padding: 32px;

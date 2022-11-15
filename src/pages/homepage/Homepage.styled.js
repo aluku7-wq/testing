@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   min-height: 100vh;
-  color: #fff;
+  color: var(--secondary);
 
   .homepage {
     display: flex;
@@ -11,7 +11,7 @@ export const Container = styled.div`
     background-position: 22% 100%;
     background-size: 22%;
     .overlay {
-      background: rgba(0, 0, 0, 0.5);
+      background: var(--overlay);
       width: 100%;
 
       .hero {
@@ -37,7 +37,8 @@ export const Container = styled.div`
             "fourth fourth";
 
           .option {
-            color: #000;
+            color: var(--primary);
+            font-weight: bold;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -45,14 +46,14 @@ export const Container = styled.div`
             transition: scale 0.5s;
             background: linear-gradient(
               45deg,
-              rgba(256, 256, 256, 0.2),
-              rgba(256, 256, 256, 0.8),
-              rgba(256, 256, 256, 0.2)
+              var(--primary),
+              var(--secondary),
+              var(--primary)
             );
-            border-radius: 8px;
+            border-radius: var(--border_radius);
 
             a {
-              color: #000;
+              color: var(--primary);
               text-decoration: none;
               width: 100%;
               height: 100%;
